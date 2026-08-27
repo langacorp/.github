@@ -86,4 +86,29 @@ they are archived. We would rather have one repository that is current than ten 
 
 ---
 
+## Tools you can use today
+
+Three small tools, each one born from a defect we measured on our own estate and could not
+find an existing answer for. No dependencies beyond the standard library. MIT.
+
+**[realroute](https://github.com/langacorp/realroute)** — checks that a route really exists,
+by content and not by status code. Born from a site that answered `200` to every URL,
+including one that could not exist, so a status-code check reported it green without having
+looked at anything.
+
+**[leakform](https://github.com/langacorp/leakform)** — finds secrets in a git repository by
+shape rather than by field name, across every ref rather than the working tree. Born from a
+repository searched for the first time five years after its last commit: the values had been
+readable the whole time, and nothing said nobody had looked.
+
+**[samecheck](https://github.com/langacorp/samecheck)** — measures whether the copies that
+should be identical still are, and never says which one is right. Born from one file living
+in 29 copies, in 4 distinct versions, under 3 different naming conventions.
+
+Each one declares its coverage on every run — how much it examined out of how much exists,
+and what it skipped and why — and each ships a self-test that must fire in one direction and
+stay silent in the other. A run that examined nothing never exits as a pass.
+
+---
+
 [langa.tv](https://langa.tv) · support@langa.tv
