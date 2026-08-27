@@ -2,87 +2,42 @@
 
 **16 digital services across 5 networks, in production, on our own infrastructure.**
 
-Day-to-day operations are handled by AI agents working under a written method. Not as an
-experiment: it is the thing that keeps the services open.
-
 Origins in 2009. First company in 2015. LANGA Corporation S.r.l. since 2019.
 Milan and Alba, Italy.
 
 ---
 
-## What we run
-
-Five networks, each one a catalogue that packages a capability and sells it to a different
-buyer. Underneath them, a single set of engines: identity, commerce, governance, monitoring,
-transactional email. An engine is written once and configured per vertical, never
-reimplemented.
-
-Internal services authenticate with a shared secret and pay nothing. External clients use an
-API key with a tier. Same route, different door.
-
----
-
-## How it is run
+## How we work
 
 A written rulebook, a shared event log, and roles with explicit permissions. Every decision,
-every doubt, and every defect is recorded as it happens, by whoever finds it.
+every doubt and every defect is recorded by whoever finds it, at the moment they find it —
+not summarised afterwards by whoever is left.
 
-The interesting part is not that agents write code. It is what happens when there are enough
-of them that no single person can hold the state in their head.
+Much of the day-to-day work is done by AI agents operating under that rulebook. The rulebook
+exists because they need it, and so do we.
 
----
+That is the part worth describing, and it is less impressive than it sounds. It exists
+because we kept losing things: a decision nobody could reconstruct, a doubt that never
+reached anyone, a defect found twice by two different people who each thought they were
+first. Writing it down as it happens is cheaper than any of those.
 
-## What we learned the expensive way
-
-**Most of what breaks is not missing. It is present, plausible, and wrong.**
-Absence is easy: something is empty, and you see it. The costly failures pass every
-completeness check because nothing is empty. They are simply not what the field claims.
-
-**A guard that was never exercised in the direction where it must fail is not a guard.**
-Run it twice. It must fire on the live defect, and it must stay silent on a correct case.
-Tested once, a guard that always passes is indistinguishable from one that works.
-
-**An empty field is visible. A full and false one is not.**
-A column filled on 89 rows out of 89, where 86 hold the wrong thing, passes validation,
-passes review, and passes the eye. Nothing flags it.
-
-**Every measurement declares its coverage.**
-Not how many rows you checked, but out of how many possible, and the date of the most
-recent. A check that examined 2 items out of 49 and found nothing is not green. It is a
-check that does not know.
-
-**An owner without a door is not an owner.**
-Assigning work to a role nobody can reach is not assigning it. The record looks complete,
-the address does not deliver, and no query will ever tell you.
-
-**Whoever produces does not verify.**
-Installing is a technical act. Verifying is a judgement, and only the second one needs to be
-independent.
+The rules are not aspirational. Each one has an outcome — it passes or it does not — and a
+consequence when it does not. A rule without a consequence gets read once and then quietly
+stops being followed.
 
 ---
 
-## Areas of work
+## What we publish, and why
 
-**Multi-agent operations.** Roles, permissions, shared memory, decision records, and the
-failure log that comes with running agents at scale.
+**We open how we work, never what we sell.** The method is useful to anyone running more
+than a handful of agents. Our service infrastructure is not, and it stays closed.
 
-**Service infrastructure.** Single sign-on, monitoring, payment gateway, transactional email,
-all centralised and consumed through catalogues.
+The tools here were not written to be published. Each one came out of a defect we hit on our
+own estate, and each one is still in use here every day. That is the only reason they stay
+current: a tool that its authors do not run stops matching reality within a few months, and
+nothing announces the moment it does.
 
-**Commerce and marketplaces.** Multi-brand storefronts running on shared engines, configured
-per sector rather than rebuilt.
-
-**Tools for small businesses.** The part that would not exist if we did not build it.
-
----
-
-## What we publish
-
-We publish method before machinery. The rules that govern how our agents work are useful to
-anyone running more than a handful of them. Our infrastructure is not, and it stays closed.
-
-Repositories here are documentation and small, self-contained tools. They are maintained or
-they are archived. We would rather have one repository that is current than ten that are not.
+We would rather have one repository that is current than ten that are not.
 
 ---
 
@@ -103,12 +58,26 @@ readable the whole time, and nothing said nobody had looked.
 
 **[samecheck](https://github.com/langacorp/samecheck)** — measures whether the copies that
 should be identical still are, and never says which one is right. Born from one file living
-in 29 copies, in 4 distinct versions, under 3 different naming conventions.
+in many copies, in several distinct versions, under three different naming conventions.
 
-Each one declares its coverage on every run — how much it examined out of how much exists,
-and what it skipped and why — and each ships a self-test that must fire in one direction and
-stay silent in the other. A run that examined nothing never exits as a pass.
+---
+
+## What they have in common
+
+**Every run declares its coverage** — how much was examined out of how much exists, and what
+was skipped and why. Not how many things you checked, but out of how many possible. A check
+that examined two items out of forty-nine and found nothing is not green; it is a check that
+does not know.
+
+**A run that examined nothing never exits as a pass.** The absence of a finding and the
+absence of a search look identical from the outside. Each tool exits non-zero when it looked
+at nothing, and says so in words.
+
+**Each one ships a self-test that must fire in one direction and stay silent in the other.**
+A guard exercised only where it passes is indistinguishable from one that always passes.
 
 ---
 
 [langa.tv](https://langa.tv) · support@langa.tv
+
+Maintained by [Luca PRATA](https://github.com/LucaPRATA), founder — LANGA Corporation S.r.l., Alba, Italy.
