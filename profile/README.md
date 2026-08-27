@@ -3,7 +3,7 @@
 **16 digital services across 5 networks, in production, on our own infrastructure.**
 
 Origins in 2009. First company in 2015. LANGA Corporation S.r.l. since 2019.
-Milan and Alba, Italy.
+Milan, Italy.
 
 ---
 
