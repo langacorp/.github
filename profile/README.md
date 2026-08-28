@@ -80,4 +80,4 @@ A guard exercised only where it passes is indistinguishable from one that always
 
 [langa.tv](https://langa.tv) · support@langa.tv
 
-Maintained by [Luca PRATA](https://github.com/LucaPRATA), founder — LANGA Corporation S.r.l., Milan, Italy.
+Maintained by [Luca PRATA](https://github.com/LucaPRATA), founder, and the LANGA Technician team — LANGA Corporation S.r.l., Milan, Italy.
