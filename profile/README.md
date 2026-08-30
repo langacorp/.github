@@ -11,8 +11,9 @@ decision and every doubt written down at the moment it happens.
 **Talos** sits on top and coordinates — it routes work to the right agent and
 executes the part that needs no person in front of it.
 
-On top of that: **16 digital services across 5 networks**, in production, on our
-own infrastructure.
+On top of that: an ecosystem of **digital services and marketplaces**, in
+production, on our own infrastructure. The current count is on
+[langa.tv](https://langa.tv) — it is not written here, because it changes.
 
 Origins in 2009. First company in 2015. LANGA Corporation S.r.l. since 2019.
 Offices in Milan, Alba, Brescia and Cuneo, Italy.
@@ -73,7 +74,7 @@ We would rather have one repository that is current than ten that are not.
 
 ## Tools you can use today
 
-Six small tools, each one born from a defect we measured on our own estate and could not
+Small tools, each one born from a defect we measured on our own estate and could not
 find an existing answer for. Each ships a self-test that runs on every push. MIT.
 
 **[realroute](https://github.com/langacorp/realroute)** — checks that a route really exists,
