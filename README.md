@@ -17,6 +17,8 @@ nothing else here, and nothing else should be: it is not a place for code.
 | [provenreal](https://github.com/langacorp/provenreal) | compare what a system claims with what can be measured |
 | [login-wall](https://github.com/langacorp/login-wall) | two guards for apps opening their own pages in a WebView |
 | [langa-3d](https://github.com/langacorp/langa-3d) | reusable pieces from a React Three Fiber project |
+| [countdrift](https://github.com/langacorp/countdrift) | find numbers written by hand that no longer match their source |
+| [langa-flutter-bits](https://github.com/langacorp/langa-flutter-bits) | four decoupled widgets from a production Flutter app |
 | [auth-server](https://github.com/langacorp/auth-server) | OAuth 2.0 authorization server, archived 2021 work |
 | [langa-tools-lite](https://github.com/langacorp/langa-tools-lite) | WordPress plugin for branding and site management |
 

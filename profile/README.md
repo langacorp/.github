@@ -73,8 +73,8 @@ We would rather have one repository that is current than ten that are not.
 
 ## Tools you can use today
 
-Three small tools, each one born from a defect we measured on our own estate and could not
-find an existing answer for. No dependencies beyond the standard library. MIT.
+Six small tools, each one born from a defect we measured on our own estate and could not
+find an existing answer for. Each ships a self-test that runs on every push. MIT.
 
 **[realroute](https://github.com/langacorp/realroute)** — checks that a route really exists,
 by content and not by status code. Born from a site that answered `200` to every URL,
@@ -84,13 +84,27 @@ looked at anything.
 **[leakform](https://github.com/langacorp/leakform)** — finds secrets in a git repository by
 shape rather than by field name, across every ref rather than the working tree. Born from a
 repository searched for the first time five years after its last commit: the values had been
-readable the whole time, and nothing said nobody had looked.
+readable the whole time, and nothing said nobody had looked. Ships a pre-commit hook that
+catches a secret one second before it is committed, which is the only second that matters.
 
 **[samecheck](https://github.com/langacorp/samecheck)** — measures whether the copies that
 should be identical still are, and never says which one is right. Born from one file living
 in many copies, in several distinct versions, under three different naming conventions.
 
----
+**[provenreal](https://github.com/langacorp/provenreal)** — compares what a system claims
+with what can be measured, from independent sources. It answers two questions rather than
+one: how many, and of what. Born from five public pages giving five different answers about
+the same thing, none of them wrong in isolation.
+
+**[countdrift](https://github.com/langacorp/countdrift)** — finds numbers written by hand
+that no longer match their source. Born from a line in our own rulebook reading *"AI agents
+in production (32 total)"* while the registry returned a different number, and from there it
+had spread into published articles and into a panel's markup.
+
+**[kemproof](https://github.com/langacorp/kemproof)** — attests that an ML-KEM-768 key
+exchange really happened, and records it with an expiry. It does not encrypt anything, and
+its README says so before it says anything else. Born from our own pages promising
+*encryption* where the code performed a *key exchange* — two different promises.
 
 ## What they have in common
 
