@@ -3,7 +3,10 @@
 **16 digital services across 5 networks, in production, on our own infrastructure.**
 
 Origins in 2009. First company in 2015. LANGA Corporation S.r.l. since 2019.
-Milan, Italy.
+Offices in Milan, Alba, Brescia and Cuneo, Italy.
+
+The company is people: a team, and developers who have built with us over the
+years. Some of them are credited by name in the repositories below.
 
 ---
 
@@ -13,8 +16,9 @@ A written rulebook, a shared event log, and roles with explicit permissions. Eve
 every doubt and every defect is recorded by whoever finds it, at the moment they find it —
 not summarised afterwards by whoever is left.
 
-Much of the day-to-day work is done by AI agents operating under that rulebook. The rulebook
-exists because they need it, and so do we.
+People decide; AI agents carry a large share of the day-to-day work under that rulebook.
+The rulebook exists because they need it, and so do we — it is what keeps the two kinds of
+work legible to each other.
 
 That is the part worth describing, and it is less impressive than it sounds. It exists
 because we kept losing things: a decision nobody could reconstruct, a doubt that never
