@@ -29,6 +29,21 @@ The rules are not aspirational. Each one has an outcome — it passes or it does
 consequence when it does not. A rule without a consequence gets read once and then quietly
 stops being followed.
 
+### What runs it
+
+**AEGIS** is the infrastructure layer underneath: identity, payments,
+governance, intelligence, sync. It holds the shared event log and the roles
+with their permissions. It is not a product and it is not sold directly —
+capabilities reach customers through the networks.
+
+**Talos** is the autopilot: the part that can act without a person in front of
+it. Most of the work is not autonomous, and the split is counted rather than
+claimed.
+
+The agents themselves are visible while they work, with the numbers read live
+and the gaps named where a number cannot be read yet:
+**[aegis.langa.tv/status](https://aegis.langa.tv/status)**
+
 ---
 
 ## What we publish, and why
