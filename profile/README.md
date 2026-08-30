@@ -1,6 +1,18 @@
 # LANGA
 
-**16 digital services across 5 networks, in production, on our own infrastructure.**
+**We build the layer that makes AI agents accountable — not the agents.**
+
+Anyone can call a model. What is hard is running a hundred of them against a
+real estate of services and still knowing, a month later, who decided what, on
+what evidence, and what it cost.
+
+**AEGIS** is that layer: shared memory, explicit permissions per role, every
+decision and every doubt written down at the moment it happens.
+**Talos** sits on top and coordinates — it routes work to the right agent and
+executes the part that needs no person in front of it.
+
+On top of that: **16 digital services across 5 networks**, in production, on our
+own infrastructure.
 
 Origins in 2009. First company in 2015. LANGA Corporation S.r.l. since 2019.
 Offices in Milan, Alba, Brescia and Cuneo, Italy.
@@ -31,14 +43,13 @@ stops being followed.
 
 ### What runs it
 
-**AEGIS** is the infrastructure layer underneath: identity, payments,
-governance, intelligence, sync. It holds the shared event log and the roles
-with their permissions. It is not a product and it is not sold directly —
+**AEGIS** also carries the engines the services share: identity, payments,
+governance, intelligence, sync. It is not a product and is not sold directly —
 capabilities reach customers through the networks.
 
-**Talos** is the autopilot: the part that can act without a person in front of
-it. Most of the work is not autonomous, and the split is counted rather than
-claimed.
+**Talos** executes the part that needs no person in front of it. Most of the
+work is not autonomous, and the split is counted rather than claimed: we would
+rather publish a smaller number that is measured.
 
 The agents themselves are visible while they work, with the numbers read live
 and the gaps named where a number cannot be read yet:
