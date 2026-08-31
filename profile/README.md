@@ -1,15 +1,17 @@
 # LANGA
 
-**We build the layer that makes AI agents accountable — not the agents.**
+**Humans decide. AEGIS is the shield they wield.**
 
 Anyone can call a model. What is hard is running a hundred of them against a
 real estate of services and still knowing, a month later, who decided what, on
 what evidence, and what it cost.
 
-**AEGIS** is that layer: shared memory, explicit permissions per role, every
+**AEGIS** is that shield: shared memory, explicit permissions per role, every
 decision and every doubt written down at the moment it happens.
-**Talos** sits on top and coordinates — it routes work to the right agent and
-executes the part that needs no person in front of it.
+Three creatures are its **minds** — **Talos** builds, **Daedalus** reorders,
+**Argus** watches. The **hands** hold it, and there are as many as needed.
+The **eyes** never sleep.
+The hands and the eyes are at work today; the minds are being built, Talos first.
 
 On top of that: an ecosystem of **digital services and marketplaces**, in
 production, on our own infrastructure. The current count is on
@@ -29,7 +31,7 @@ A written rulebook, a shared event log, and roles with explicit permissions. Eve
 every doubt and every defect is recorded by whoever finds it, at the moment they find it —
 not summarised afterwards by whoever is left.
 
-People decide; AI agents carry a large share of the day-to-day work under that rulebook.
+Humans decide; the hands carry a large share of the day-to-day work under that rulebook.
 The rulebook exists because they need it, and so do we — it is what keeps the two kinds of
 work legible to each other.
 
@@ -48,11 +50,11 @@ stops being followed.
 governance, intelligence, sync. It is not a product and is not sold directly —
 capabilities reach customers through the networks.
 
-**Talos** executes the part that needs no person in front of it. Most of the
+**Talos** will execute the part that needs no person in front of it. Most of the
 work is not autonomous, and the split is counted rather than claimed: we would
 rather publish a smaller number that is measured.
 
-The agents themselves are visible while they work, with the numbers read live
+The hands themselves are visible while they work, with the numbers read live
 and the gaps named where a number cannot be read yet:
 **[aegis.langa.tv/status](https://aegis.langa.tv/status)**
 
@@ -61,7 +63,7 @@ and the gaps named where a number cannot be read yet:
 ## What we publish, and why
 
 **We open how we work, never what we sell.** The method is useful to anyone running more
-than a handful of agents. Our service infrastructure is not, and it stays closed.
+than a handful of hands. Our service infrastructure is not, and it stays closed.
 
 The tools here were not written to be published. Each one came out of a defect we hit on our
 own estate, and each one is still in use here every day. That is the only reason they stay
