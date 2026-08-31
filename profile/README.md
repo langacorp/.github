@@ -56,7 +56,7 @@ rather publish a smaller number that is measured.
 
 The hands themselves are visible while they work, with the numbers read live
 and the gaps named where a number cannot be read yet:
-**[aegis.langa.tv/status](https://aegis.langa.tv/status)**
+**[aegis.langa.tv/#status](https://aegis.langa.tv/#status)**
 
 ---
 
