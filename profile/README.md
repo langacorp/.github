@@ -9,7 +9,7 @@ what evidence, and what it cost.
 **AEGIS** is that shield: shared memory, explicit permissions per role, every
 decision and every doubt written down at the moment it happens.
 Three creatures are its **minds** — **Talos** builds, **Daedalus** reorders,
-**Argus** watches. The **hands** hold it, and there are as many as needed.
+**Argus** enforces. The **hands** hold it, and there are as many as needed.
 The **eyes** never sleep.
 The hands and the eyes are at work today; the minds are being built, Talos first.
 
