@@ -128,8 +128,9 @@ one: how many, and of what. Born from five public pages giving five different an
 the same thing, none of them wrong in isolation.
 
 **[countdrift](https://github.com/langacorp/countdrift)** — finds numbers written by hand
-that no longer match their source. Born from a line in our own rulebook reading *"AI agents
-in production (32 total)"* while the registry returned a different number, and from there it
+that no longer match their source. Born from a rulebook of ours declaring, as a plain
+figure, how many AI agents were in production, while the registry returned a different
+number — and the two were not even counting the same kind of thing. From that line it
 had spread into published articles and into a panel's markup.
 
 **[kemproof](https://github.com/langacorp/kemproof)** — attests that an ML-KEM-768 key
