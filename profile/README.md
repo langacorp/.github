@@ -2,16 +2,19 @@
 
 **Humans decide. AEGIS is the shield they wield.**
 
-Anyone can call a model. What is hard is running a hundred of them against a
-real estate of services and still knowing, a month later, who decided what, on
-what evidence, and what it cost.
+Anyone can call a model. What is hard is running them at scale against a real
+estate of services and still knowing, a month later, who decided what, on what
+evidence, and what it cost.
 
 **AEGIS** is that shield: shared memory, explicit permissions per role, every
 decision and every doubt written down at the moment it happens.
-Three creatures are its **minds** — **Talos** builds, **Daedalus** reorders,
-**Argus** enforces. The **hands** hold it, and there are as many as needed.
-The **eyes** never sleep.
-The hands and the eyes are at work today; the minds are being built, Talos first.
+Three creatures will be its **minds**. **Talos** builds, and it is the one that
+runs today: it routes work, and behind every routing it leaves a trace carrying
+the cause, the actor, and the version of the rules in force at that moment.
+**Daedalus**, which reorders, and **Argus**, which enforces, are declared and not
+yet built.
+The **hands** hold the shield, and there are as many as needed. The **eyes**
+never sleep.
 
 On top of that: an ecosystem of **digital services and marketplaces**, in
 production, on our own infrastructure. The current count is on
@@ -57,6 +60,31 @@ rather publish a smaller number that is measured.
 The hands themselves are visible while they work, with the numbers read live
 and the gaps named where a number cannot be read yet:
 **[aegis.langa.tv/#status](https://aegis.langa.tv/#status)**
+
+---
+
+## What we keep finding
+
+The defects that cost us most are not missing data. They are data that is present, looks
+right, and answers a different question. Empty is visible. Full and wrong is not, because it
+passes every completeness check.
+
+Four we hit recently, all of them our own:
+
+- A search for a stale number ran across every source and returned zero, and the page still
+  displayed that number. The block did not contain it: it computed it from the wrong
+  starting year. The check was green, and it had been reading a different page.
+- A probe looked for a word that appears in the success line. The failure line contained it
+  too. Five external hosts came back compliant when none of them was.
+- A permission probe sent a write that changed nothing, and got success back from a
+  credential that did not hold the permission. A write that changes nothing cannot tell
+  *I may* apart from *there was nothing to do*.
+- A pattern written to exclude line breaks excluded a letter instead. It matched less,
+  silently, and the shorter answer read like good news. An error that finds fewer things
+  arrives as reassurance, which is why it survives longest.
+
+None of these were found by reasoning. Reasoning was plausible every time, and that is what
+makes it dangerous.
 
 ---
 
