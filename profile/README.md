@@ -6,14 +6,14 @@ Anyone can call a model. What is hard is running them at scale against a real
 estate of services and still knowing, a month later, who decided what, on what
 evidence, and what it cost.
 
-**AEGIS** is that shield: shared memory, explicit permissions per role, every
+**AEGIS** is that engine: shared memory, explicit permissions per role, every
 decision and every doubt written down at the moment it happens.
 Three creatures will be its **minds**. **Talos** builds, and it is the one that
 runs today: it routes work, and behind every routing it leaves a trace carrying
 the cause, the actor, and the version of the rules in force at that moment.
 **Daedalus**, which reorders, and **Argus**, which enforces, are declared and not
 yet built.
-The **hands** hold the shield, and there are as many as needed. The **eyes**
+The **hands** drive the engine, and there are as many as needed. The **eyes**
 never sleep.
 
 On top of that: an ecosystem of **digital services and marketplaces**, in
