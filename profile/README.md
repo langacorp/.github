@@ -1,6 +1,6 @@
 # LANGA
 
-**Humans decide. AEGIS is the engine they wield.**
+**Humans decide. AEGIS is the engine they control.**
 
 Anyone can call a model. What is hard is running them at scale against a real
 estate of services and still knowing, a month later, who decided what, on what
